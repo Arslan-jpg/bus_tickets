@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1119.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Control">
+   <children>
+      <AnchorPane prefHeight="664.0" prefWidth="264.0" style="-fx-background-color: #34383b;">
+         <children>
+            <Label fx:id="labelNaslov1" layoutX="14.0" layoutY="14.0" text="Pretraživanje:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="50.0" text="Mjesto polaska:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPolazak" layoutX="14.0" layoutY="77.0" prefHeight="25.0" prefWidth="234.0" />
+            <Label layoutX="14.0" layoutY="116.0" text="Odredište:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtOdrediste" layoutX="14.0" layoutY="144.0" prefHeight="25.0" prefWidth="234.0" />
+            <DatePicker fx:id="dateDatum" layoutX="11.0" layoutY="205.0" prefHeight="21.0" prefWidth="234.0" />
+            <Label layoutX="14.0" layoutY="181.0" text="Datum:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="-1.0" layoutY="302.0" prefHeight="488.0" prefWidth="269.0" style="-fx-background-color: #3d5a80;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Unos autobusa:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="45.0" text="Prevoznik:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtPrevoznik" layoutX="14.0" layoutY="68.0" prefHeight="25.0" prefWidth="234.0" />
+                  <Label layoutX="14.0" layoutY="100.0" text="Mjesto polaska:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtPolazakUnos" layoutX="14.0" layoutY="120.0" prefHeight="25.0" prefWidth="234.0" />
+                  <Label layoutX="16.0" layoutY="153.0" text="Odredište" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtOdredisteUnos" layoutX="14.0" layoutY="176.0" prefHeight="25.0" prefWidth="234.0" />
+                  <Label layoutX="16.0" layoutY="209.0" text="Vrijeme i datum polaska" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="263.0" text="Vrijeme i datum dolaska" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="318.0" text="Prolazak kroz:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtProlazak" layoutX="12.0" layoutY="340.0" prefHeight="25.0" prefWidth="234.0" />
+                  <Label layoutX="14.0" layoutY="372.0" text="Sjedišta:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtSjedista" layoutX="14.0" layoutY="393.0" prefHeight="25.0" prefWidth="99.0" promptText="Ukupno">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtSlobodna" layoutX="134.0" layoutY="393.0" prefHeight="25.0" prefWidth="112.0" promptText="Slobodno">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnUnesi" layoutX="17.0" layoutY="432.0" mnemonicParsing="false" onAction="#onButtonUnos" prefHeight="25.0" prefWidth="234.0" style="-fx-background-color: #ffca3a;" text="UNESI">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <DatePicker fx:id="dateDatumP_unos" layoutX="17.0" layoutY="232.0" prefHeight="25.0" prefWidth="119.0" />
+                  <DatePicker fx:id="dateDatumD_unos" layoutX="17.0" layoutY="287.0" prefHeight="25.0" prefWidth="119.0" />
+                  <TextField fx:id="txtSatiP" layoutX="148.0" layoutY="232.0" prefHeight="25.0" prefWidth="41.0" />
+                  <TextField fx:id="txtMinutaP" layoutX="205.0" layoutY="232.0" prefHeight="25.0" prefWidth="41.0" />
+                  <TextField fx:id="txtSatiD" layoutX="148.0" layoutY="287.0" prefHeight="25.0" prefWidth="41.0" />
+                  <TextField fx:id="txtMinutaD" layoutX="205.0" layoutY="287.0" prefHeight="25.0" prefWidth="41.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnPretraga" layoutX="11.0" layoutY="252.0" mnemonicParsing="false" onAction="#onButtonSearch" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: #ffca3a;" text="PRETRAŽI">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnClear" layoutX="217.0" layoutY="252.0" mnemonicParsing="false" onAction="#onButtonClear" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #d62929;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="863.0" prefHeight="790.0" prefWidth="257.0" style="-fx-background-color: #43aa8b;">
+         <children>
+            <Label layoutX="14.0" layoutY="20.0" text="Karta:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="53.0" text="Vožnja:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtVoznja" layoutX="14.0" layoutY="76.0" prefHeight="25.0" prefWidth="234.0" />
+            <Label layoutX="14.0" layoutY="110.0" text="Ime i prezime:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtImePrezime" layoutX="14.0" layoutY="133.0" prefHeight="25.0" prefWidth="234.0" />
+            <Label layoutX="17.0" layoutY="167.0" text="Odredište:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtKartaOdrediste" layoutX="14.0" layoutY="188.0" prefHeight="25.0" prefWidth="234.0" />
+            <Label layoutX="17.0" layoutY="224.0" text="Povratna:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbDa" layoutX="26.0" layoutY="251.0" mnemonicParsing="false" text="DA" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Toggle1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbNe" layoutX="159.0" layoutY="251.0" mnemonicParsing="false" text="NE" textFill="WHITE" toggleGroup="$Toggle1">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="btnPotvrda" layoutX="14.0" layoutY="282.0" mnemonicParsing="false" onAction="#onButtonPotvrda" prefHeight="25.0" prefWidth="234.0" style="-fx-background-color: #ffca3a;" text="POTVRDA">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="266.0" layoutY="-1.0" prefHeight="799.0" prefWidth="603.0">
+         <children>
+            <TableView fx:id="tableBaza" layoutX="-4.0" layoutY="-6.0" prefHeight="801.0" prefWidth="607.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="60.0" text="idVoznje" />
+                <TableColumn fx:id="colPrevoznik" prefWidth="90.0" text="Prevoznik" />
+                  <TableColumn fx:id="colMjPolaska" prefWidth="91.0" text="Mjesto polaska" />
+                  <TableColumn fx:id="colOdrediste" prefWidth="77.0" text="Odredište" />
+                  <TableColumn fx:id="colVrPolaska" prefWidth="116.0" text="Vr. polaska" />
+                  <TableColumn fx:id="colVrDolaska" prefWidth="102.0" text="Vr. dolaska" />
+                  <TableColumn fx:id="colSlobodnih" prefWidth="70.0" text="Slobodnih mj:" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
